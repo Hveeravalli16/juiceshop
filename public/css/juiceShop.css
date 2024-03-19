@@ -1,0 +1,365 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+   
+
+}
+.login-container{   
+    border: green;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: #558B2F;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    margin-left: 557px;
+    margin-top: 30px;
+    height: 400px;
+}
+#editPages-container tr{
+    font-weight: normal;
+}
+#editPages-container{
+    border: green;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: #558B2F;
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    margin-left: 557px;
+    margin-top: 30px;
+    height: 400px;
+ }
+
+.login-container label{    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #558B2F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+.tag-line{
+    font-family: sans-serif;
+    font-size: xxx-large;
+    font-weight: bold;
+    color:#558B2F ;
+}
+.image-header>img{
+    height: 200px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;   
+    width: 80%;   
+   
+  }
+nav li {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: #dd4e23;
+    padding: 30px;
+}
+
+
+nav li a {
+    color:#dd4e23 ;
+    text-decoration: none;
+
+}
+footer {   
+    width: 100%;
+    position: relative;
+	padding: 10px 0;
+	text-align: center;
+	color: #558B2F;
+	font-weight: 500;
+	text-shadow: 0 0 20px white;
+    justify-content: center;
+    bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;   
+  
+}
+
+
+.container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 20px;
+   }
+   .add-container,.edit-container,.editPages-container,.main-container{
+       display: flex;
+       justify-content: center;
+     }
+     #loginForm{
+       margin-left: 0px;
+     }
+     #backHome {
+        margin: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        color: #558B2F;
+        padding: 30px;
+        text-decoration: none;
+      } 
+      #loginForm{
+        width: 80%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #558B2F;
+       
+     }
+     #allOrdersForm{
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #558B2F;
+       
+     }
+     #loginForm,#allOrdersForm h2{
+        text-align: center;
+        width: 100%;
+        color: #558B2F;
+     }
+
+.itemCard {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 16px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    width: 25%;
+}
+
+.itemCard h4 {
+    margin-top: 8px;
+}
+
+.itemsContainer {
+    width: 80%;
+    margin: 40px auto 120px auto;
+}
+
+.saleHeader {   
+    display: block;    
+    background-color: #fff;
+text-align: center;
+    border-radius: 10px
+}
+
+.itemImageDiv {
+    width: 250px;
+    height: 200px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+button {
+    background-color: #558B2F;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+.imgGarageSale {
+    width: 50%;
+    height: 300px;
+}
+
+.itemDetails {
+    margin: 16px 0 8px 0;
+}
+.itemDetails input[type="text"]{
+    width: 50px;
+    height: 40px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lblQuantity{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #558B2F;
+    width: 50px;
+    display: inline-block;
+}
+.itemDetails label{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #558B2F;
+    width: 100px;
+    display: inline-block;
+}
+.itemImage {
+    width: 200px;
+    height: 200px;
+}
+#btnCheckOut,#btnSubmit{
+    background-color: #558B2F; 
+    font-size: 20px; 
+    color: white;
+    width: 200px;
+    border-radius: 4px;
+    padding: 18px 16px; 
+    text-align: center; 
+    border: none; 
+    float:right;
+   }
+input[name="quantity"]{
+    width: 50px;
+    border-radius: 4px;
+    border-color: #ebae81;
+    border-style: solid;
+    height: 25px;
+}
+.lblQuantity
+{
+    margin-left: 50px;
+}
+#checkOutForm,#inventoryDetails{    
+    border: 4px solid #558B2F;
+    border-radius: 10px;
+    width: 70%;  
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+     height: 600px;
+    background-color: antiquewhite;
+
+}
+#checkOutForm input[type="text"]
+{
+  
+    width: 300px;
+    height: 40px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+#checkOutForm label 
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #558B2F;
+width: 200px;
+display: inline-block;
+
+}
+.divSubmit{
+   margin-top: 30px;
+    text-align: center;    
+    
+   }
+  #checkOutForm>.formElements{
+    margin:10px 40px 10px 40px;
+   
+   }
+.errors{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: red;
+font-size: 18px;
+line-height: 20px;
+text-align: center;
+padding: 10px;
+margin: 0;
+border-radius: 10px;
+
+}
+
+input[type="email"]
+{
+  
+    width: 300px;
+    height: 40px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+table { 
+    border : 2px solid #558B2F; 
+    border-collapse: collapse; 
+    margin: 20px auto; 
+   width: 80%;
+} 
+td, th { 
+    border : 2px solid #558B2F; 
+    padding : 5px 4px; 
+}
+
+
+#inventoryDetails label 
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #558B2F;
+    width: 100px;    
+}
+#inventoryDetails .formElements
+{
+    border: 4px solid #558B2F;
+    border-radius: 10px;
+    text-align: center;
+    background: #eddce3;
+}
+table{
+    margin-left: 50px;
+    margin-bottom: 10px;   
+    padding-bottom: 30px;
+}
+.btnAddItem
+{
+    background-color: 558B2F;
+    padding: 10px 10px;
+    border-radius: 3px;    
+    font-size: 14px;
+    border: 0px;
+    
+}

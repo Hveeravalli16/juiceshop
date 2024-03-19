@@ -1,0 +1,43 @@
+<%- include('layouts/header'); -%>
+<div>
+    <nav><li><a href="/logout">LogOut</a>
+    </li> 
+    <li><a href="/">Home</a></li>    
+</nav>
+
+  </div>
+  
+<section>
+    <div id="editPages-container" >     
+        <form method="post" action="/allOrders" id="allOrdersForm">
+       <h2>All Orders</h2>
+       <div class="formField">
+        <table>
+            <thead>
+                <th>Student Name</th>   
+                <th>Student Id</th> 
+                <th>Juices</th>                     
+                <th>Sub Total</th>
+                <th>Tax</th>
+                <th>Total</th>              
+            </thead>
+            <tbody>
+                <% orders.forEach((x) => { %>
+                    <tr>
+                        <td> <%= x.studentname %> </td>   
+                        <td> <%= x.studentid %> </td>   
+                        <td> <%= x.subtotal.toFixed(2) %> </td>                        
+                        <td> <%= x.tax.toFixed(2) %> </td>  
+                        <td> <%= (x.subtotal+x.tax).toFixed(2) %> </td>   
+                        <td> <a href="/delete/<%= x._id%>">Delete</a> </td>
+                    </tr>
+               <% }) %>
+            </tbody>
+        </table>
+      
+    </div>
+</form>
+</div>
+</section>
+
+    <%- include('layouts/footer'); -%>

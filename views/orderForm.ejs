@@ -1,0 +1,92 @@
+<%- include('layouts/header'); -%>
+<%- include('layouts/nav'); -%>
+<div class="itemsContainer" id="checkOutForm">
+    <form action="/" method="post" onsubmit="return onSubmit()" name="frmUserDetails">
+        <div>
+            <h4 style="text-align: center;"><label style="display: inline;font-size: 30px">Order Form</label></h4>
+        </div>
+        
+         
+                <div class="formElements">
+                    <label>Student Name* :</label>
+                    <input name="name" type="text" placeholder="Name" id="name">
+                </div>
+                <div class="formElements">
+                    <label>Student Id* :</label>
+                    <input name="studentId" type="text" placeholder="XXX-XXXX" id="studentId">
+                </div>
+                
+        <div class="itemCard">
+            <h4><strong>Mango Juice</strong></h4>
+            <div class="itemImageDiv">
+                <img src="Images/mango.jpg" class="itemImage" alt="Mango Juice"><br>
+            </div>
+            <div class="itemDetails">
+                <label>Price: 6.99$</label>
+
+                <label class="lblQuantity">Qty:</label>
+                <input type="text" name="quantity" value="" id="qtyMango">
+
+                <button type="button" onclick="addItems(this);" class="btnAddItem" id="mango"
+                    name="MangoJuice">Add</button>
+            </div>
+        </div>
+        <div class="itemCard">
+            <h4><strong>Berry Juice</strong></h4>
+            <div class="itemImageDiv">
+                <img src="Images/berry.jpg" class="itemImage" alt="Mango Juice"><br>
+            </div>
+            <div class="itemDetails">
+                <label>Price: 5.99$</label>
+
+                <label class="lblQuantity">Qty:</label>
+                <input type="text" name="quantity" value="" id="qtyBerry">
+
+                <button type="button" onclick="addItems(this);" class="btnAddItem" id="berry"
+                    name="BerryJuice">Add</button>
+            </div>
+        </div>
+        <div class="itemCard">
+            <h4><strong>Apple Juice</strong></h4>
+            <div class="itemImageDiv">
+                <img src="Images/apple.jpg" class="itemImage" alt="Apple Juice"><br>
+            </div>
+            <div class="itemDetails">
+                <label>Price: 3.99$</label>
+
+                <label class="lblQuantity">Qty:</label>
+                <input type="text" name="quantity" value="" id="qtyApple">
+
+                <button type="button" onclick="addItems(this);" class="btnAddItem" id="apple"
+                    name="AppleJuice">Add</button>
+            </div>
+        </div>
+        <section>
+            <p id="errorMessage">
+            <div>
+                <% if(typeof(errors) !='undefined' ) { for(let error of errors) { %>
+                    <p class="errors">
+                        <%= error.msg %>
+                    </p>
+                    <% } %>
+                        <% } %>
+            </div>
+            </p>
+        </section> 
+        <div>
+            <input type="submit" value="Submit" id="btnSubmit" >
+        </div>  
+       
+    </form>
+    </div>
+   
+  
+    </div>
+    <%- include('layouts/footer') -%>
+    <script>  
+        // Add an event listener to the button
+       function addItems(e){
+        document.getElementById(e.id).innerHTML="Added"             
+        };
+  
+</script>
